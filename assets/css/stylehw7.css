@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.container{
+    width: 70vw;
+    min-width: 300px;
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 10px;
+    min-height: 100vh;
+}
+.tovar{
+    border: 1px solid gray;
+}
+.content{
+    display: flex;
+}
+.foto{
+    align-items: center;
+    padding: 1.25rem;
+}
+img{
+    height: 10rem;
+    display: inline-block;
+    margin: 0;
+    transition: 0.3s;
+}
+.text{
+    padding-right: 7px;
+    padding-bottom: 7px;
+    width: 70%;
+}
+h4{
+    font-size: 1.25rem;
+    margin: 3px auto;
+}
+ul{
+    display: flex;
+    padding-left: 0;
+    flex-wrap: wrap;
+    margin-top: 3px;
+}
+li{
+    margin: 0px 15px;
+}
+ul>li:first-child{
+    list-style: none;
+    margin-left: -3px;
+}
+.text>span:last-child{
+    color: rgba(0,0,0,0);
+    transition: 0.3s;
+}
+.price{
+    padding: 10px;
+}
+.price>div:first-child{
+    color: orange;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+button{
+    background-color: orange;
+    color:white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 1rem;
+}
+.price>.click{
+    background:white;
+    transition: 0.3s;
+}
+.tovar:hover .click{
+    background: green ;
+    color: white;
+    transition: 0.3s;
+}
+.tovar:hover img{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.tovar:hover span:last-child{
+    color:black;
+}
+.tovar:hover span+span>i{
+    color: red;
+}
